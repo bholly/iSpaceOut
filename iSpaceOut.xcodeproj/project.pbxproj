@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1F3B9A2D0EF2145700286867 /* iSpaceOutAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F3B9A2B0EF2145700286867 /* iSpaceOutAppDelegate.m */; };
+		4C00869D112F0A3800AFA58D /* GPL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4C00869C112F0A3800AFA58D /* GPL.txt */; };
 		4C0B868E1051C75500FE3D34 /* asteroidsSheet.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C0B868D1051C75500FE3D34 /* asteroidsSheet.png */; };
 		4C328FB210825FEA0073EFCE /* menu_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C328FB110825FEA0073EFCE /* menu_background.png */; };
 		4C3481C110A0AC3F002C5D07 /* manual.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4C3481C010A0AC3F002C5D07 /* manual.txt */; };
@@ -254,6 +255,7 @@
 		1F3B9A2C0EF2145700286867 /* iSpaceOutAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iSpaceOutAppDelegate.h; path = Classes/iSpaceOutAppDelegate.h; sourceTree = SOURCE_ROOT; };
 		1F3B9A820EF2151B00286867 /* iSpaceOut_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iSpaceOut_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4C00869C112F0A3800AFA58D /* GPL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GPL.txt; sourceTree = "<group>"; };
 		4C0B868D1051C75500FE3D34 /* asteroidsSheet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asteroidsSheet.png; sourceTree = "<group>"; };
 		4C328FB110825FEA0073EFCE /* menu_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_background.png; sourceTree = "<group>"; };
 		4C3481C010A0AC3F002C5D07 /* manual.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = manual.txt; sourceTree = "<group>"; };
@@ -589,6 +591,7 @@
 				505573BF1045D1BE00A31725 /* Icon.png */,
 				CA3EACB80FEE7024004BBF8E /* fps_images.png */,
 				8D1107310486CEB800E47090 /* Info.plist */,
+				4C00869C112F0A3800AFA58D /* GPL.txt */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -1158,6 +1161,7 @@
 				4C3481C110A0AC3F002C5D07 /* manual.txt in Resources */,
 				4CA3C4A710A2030100ABCDC4 /* keyHit.caf in Resources */,
 				4CF367CA10A469E1002A7EA2 /* roundedMetalFrame.png in Resources */,
+				4C00869D112F0A3800AFA58D /* GPL.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
