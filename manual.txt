@@ -1,0 +1,7 @@
+Tap anywhere on the screen (except the buttons) to make virtual joystick appear. Control your ship by moving your finger in the direction it shall move. The more you drag your finger, the more your ship will accelerate. Shoot a bullet by pressing fire button. You can use the Pause button to pause or exit game.
+
+When game is over your're asked to enter your name and your score will be posted to highscore server. If you don't want this, just press Cancel. 
+
+If you'd like to appear buttons on the left side of the screen, exit game, go to your iPhone Settings, tap iSpaceOut and set the Buttons Right switch to zero.
+
+ 
