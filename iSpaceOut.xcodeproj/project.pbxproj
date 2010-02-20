@@ -10,6 +10,7 @@
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1F3B9A2D0EF2145700286867 /* iSpaceOutAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F3B9A2B0EF2145700286867 /* iSpaceOutAppDelegate.m */; };
 		4C00869D112F0A3800AFA58D /* GPL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4C00869C112F0A3800AFA58D /* GPL.txt */; };
+		4C096779112F650600CE312A /* iSpaceOut_icon_big.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C096778112F650600CE312A /* iSpaceOut_icon_big.jpg */; };
 		4C0B868E1051C75500FE3D34 /* asteroidsSheet.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C0B868D1051C75500FE3D34 /* asteroidsSheet.png */; };
 		4C328FB210825FEA0073EFCE /* menu_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C328FB110825FEA0073EFCE /* menu_background.png */; };
 		4C3481C110A0AC3F002C5D07 /* manual.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4C3481C010A0AC3F002C5D07 /* manual.txt */; };
@@ -256,6 +257,7 @@
 		1F3B9A820EF2151B00286867 /* iSpaceOut_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iSpaceOut_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4C00869C112F0A3800AFA58D /* GPL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GPL.txt; sourceTree = "<group>"; };
+		4C096778112F650600CE312A /* iSpaceOut_icon_big.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = iSpaceOut_icon_big.jpg; sourceTree = "<group>"; };
 		4C0B868D1051C75500FE3D34 /* asteroidsSheet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asteroidsSheet.png; sourceTree = "<group>"; };
 		4C328FB110825FEA0073EFCE /* menu_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_background.png; sourceTree = "<group>"; };
 		4C3481C010A0AC3F002C5D07 /* manual.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = manual.txt; sourceTree = "<group>"; };
@@ -583,6 +585,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4C096778112F650600CE312A /* iSpaceOut_icon_big.jpg */,
 				4C3481BF10A0AC25002C5D07 /* Manual */,
 				4CDADA0E105EDA650083539E /* Fonts */,
 				4CDAD8D410518CDA007E13FF /* sounds */,
@@ -1162,6 +1165,7 @@
 				4CA3C4A710A2030100ABCDC4 /* keyHit.caf in Resources */,
 				4CF367CA10A469E1002A7EA2 /* roundedMetalFrame.png in Resources */,
 				4C00869D112F0A3800AFA58D /* GPL.txt in Resources */,
+				4C096779112F650600CE312A /* iSpaceOut_icon_big.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
