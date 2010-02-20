@@ -245,7 +245,7 @@ static int gimmickCollision(cpShape *a, cpShape *b, cpContact *contacts, int num
 		[sprites addChild:[theShip sprite] z:0];
 		
 		// Adjust buttons depending on settings
-		buttonsRight = [[NSUserDefaults standardUserDefaults] boolForKey:@"enable_buttonsRight"];
+		buttonsRight = ![[NSUserDefaults standardUserDefaults] boolForKey:@"enable_buttonsLeft"];
 		CGPoint fireButtonPos = kFireButtonRightPosition;
 		CGPoint pauseButtonPos = kPauseButtonRightPosition;
 		if (!buttonsRight)

@@ -2,6 +2,6 @@ Tap anywhere on the screen (except the buttons) to make virtual joystick appear.
 
 When game is over your're asked to enter your name and your score will be posted to highscore server. If you don't want this, just press Cancel. 
 
-If you'd like to appear buttons on the left side of the screen, exit game, go to your iPhone Settings, tap iSpaceOut and set the Buttons Right switch to zero.
+If you'd like to appear buttons on the left side of the screen, exit game, go to your iPhone Settings, tap iSpaceOut and set the Buttons Left switch to one.
 
  
