@@ -34,7 +34,7 @@
 		
 		
 		// Label with About info
-		BitmapFontAtlas *developedLabel1 = [BitmapFontAtlas bitmapFontAtlasWithString:@"Developed and written by" 
+		BitmapFontAtlas *developedLabel1 = [BitmapFontAtlas bitmapFontAtlasWithString:@"V1.0 Developed and written by" 
 																			 fntFile:@"KrungthepGreen.fnt"];
 		[developedLabel1 setColor:ccc3(255, 0, 200)];
 		BitmapFontAtlas *developedLabel2 = [BitmapFontAtlas bitmapFontAtlasWithString:@"highestfloor.com" 
