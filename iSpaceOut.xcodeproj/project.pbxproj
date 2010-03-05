@@ -71,6 +71,11 @@
 		4CF367A310A45F05002A7EA2 /* AboutLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF367A210A45F05002A7EA2 /* AboutLayer.m */; };
 		4CF367CA10A469E1002A7EA2 /* roundedMetalFrame.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CF367C910A469E1002A7EA2 /* roundedMetalFrame.png */; };
 		4CF4D032109F5E3300DC631B /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4CF4D031109F5E3300DC631B /* Settings.bundle */; };
+		4CF8646D11413F9700FC7C1C /* Slider.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF8646C11413F9700FC7C1C /* Slider.m */; };
+		4CF86472114143A100FC7C1C /* OptionsScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF86471114143A100FC7C1C /* OptionsScene.m */; };
+		4CF864A2114146CE00FC7C1C /* slidergroove.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CF8649F114146CE00FC7C1C /* slidergroove.png */; };
+		4CF864A3114146CE00FC7C1C /* sliderthumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CF864A0114146CE00FC7C1C /* sliderthumb.png */; };
+		4CF864A4114146CE00FC7C1C /* sliderthumbsel.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CF864A1114146CE00FC7C1C /* sliderthumbsel.png */; };
 		505573C01045D1BE00A31725 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 505573BF1045D1BE00A31725 /* Icon.png */; };
 		505573C21045D1EA00A31725 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 505573C11045D1EA00A31725 /* Default.png */; };
 		505574581045D68500A31725 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 506EDBA4102F4C9F00A389B3 /* AVFoundation.framework */; };
@@ -351,6 +356,13 @@
 		4CF367A210A45F05002A7EA2 /* AboutLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutLayer.m; sourceTree = "<group>"; };
 		4CF367C910A469E1002A7EA2 /* roundedMetalFrame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = roundedMetalFrame.png; sourceTree = "<group>"; };
 		4CF4D031109F5E3300DC631B /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		4CF8646B11413F9700FC7C1C /* Slider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Slider.h; sourceTree = "<group>"; };
+		4CF8646C11413F9700FC7C1C /* Slider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Slider.m; sourceTree = "<group>"; };
+		4CF86470114143A100FC7C1C /* OptionsScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionsScene.h; sourceTree = "<group>"; };
+		4CF86471114143A100FC7C1C /* OptionsScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionsScene.m; sourceTree = "<group>"; };
+		4CF8649F114146CE00FC7C1C /* slidergroove.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slidergroove.png; sourceTree = "<group>"; };
+		4CF864A0114146CE00FC7C1C /* sliderthumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sliderthumb.png; sourceTree = "<group>"; };
+		4CF864A1114146CE00FC7C1C /* sliderthumbsel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sliderthumbsel.png; sourceTree = "<group>"; };
 		505573BF1045D1BE00A31725 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		505573C11045D1EA00A31725 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		506EDB87102F4C4000A389B3 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -642,6 +654,8 @@
 				4CA3C43E10A1F34F00ABCDC4 /* BitmapFontAppearing.m */,
 				4CF367A110A45F05002A7EA2 /* AboutLayer.h */,
 				4CF367A210A45F05002A7EA2 /* AboutLayer.m */,
+				4CF86470114143A100FC7C1C /* OptionsScene.h */,
+				4CF86471114143A100FC7C1C /* OptionsScene.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -709,6 +723,8 @@
 		4CB2C7231051715800F490F3 /* Game Objects */ = {
 			isa = PBXGroup;
 			children = (
+				4CF8646B11413F9700FC7C1C /* Slider.h */,
+				4CF8646C11413F9700FC7C1C /* Slider.m */,
 				4CB2C724105171A500F490F3 /* Bullet.h */,
 				4CB2C725105171A500F490F3 /* Bullet.m */,
 				4CB2C726105171A500F490F3 /* ChipmunkObject.h */,
@@ -732,6 +748,9 @@
 		4CB2C733105171C000F490F3 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				4CF8649F114146CE00FC7C1C /* slidergroove.png */,
+				4CF864A0114146CE00FC7C1C /* sliderthumb.png */,
+				4CF864A1114146CE00FC7C1C /* sliderthumbsel.png */,
 				4CF367C910A469E1002A7EA2 /* roundedMetalFrame.png */,
 				4CB98CCA10888B380072099F /* pause.png */,
 				4C328FB110825FEA0073EFCE /* menu_background.png */,
@@ -1166,6 +1185,9 @@
 				4CF367CA10A469E1002A7EA2 /* roundedMetalFrame.png in Resources */,
 				4C00869D112F0A3800AFA58D /* GPL.txt in Resources */,
 				4C096779112F650600CE312A /* iSpaceOut_icon_big.jpg in Resources */,
+				4CF864A2114146CE00FC7C1C /* slidergroove.png in Resources */,
+				4CF864A3114146CE00FC7C1C /* sliderthumb.png in Resources */,
+				4CF864A4114146CE00FC7C1C /* sliderthumbsel.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1210,6 +1232,8 @@
 				4C3481C410A0AEA3002C5D07 /* HelpScene.m in Sources */,
 				4CA3C43F10A1F34F00ABCDC4 /* BitmapFontAppearing.m in Sources */,
 				4CF367A310A45F05002A7EA2 /* AboutLayer.m in Sources */,
+				4CF8646D11413F9700FC7C1C /* Slider.m in Sources */,
+				4CF86472114143A100FC7C1C /* OptionsScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

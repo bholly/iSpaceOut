@@ -23,6 +23,7 @@
 #import "iSpaceOutAppDelegate.h"
 #import "HelpScene.h"
 #import "AboutLayer.h"
+#import "OptionsScene.h"
 
 
 @implementation MainMenuScene
@@ -70,6 +71,9 @@
 		// Settings
 		BitmapFontAtlas *helpLabel = [BitmapFontAtlas bitmapFontAtlasWithString:@"Help" fntFile:@"punkGreen.fnt"];
 		MenuItemLabel *helpItem = [MenuItemLabel itemWithLabel:helpLabel target:self selector:@selector(menuCallbackHelp:)];
+		// Options
+		BitmapFontAtlas *optionsLabel = [BitmapFontAtlas bitmapFontAtlasWithString:@"Options" fntFile:@"punkGreen.fnt"];
+		MenuItemLabel *optionItem = [MenuItemLabel itemWithLabel:optionsLabel target:self selector:@selector(menuCallbackOptions:)];
 		// About
 		BitmapFontAtlas *aboutLabel = [BitmapFontAtlas bitmapFontAtlasWithString:@"About" fntFile:@"punkGreen.fnt"];
 		MenuItemLabel *aboutItem = [MenuItemLabel itemWithLabel:aboutLabel target:self selector:@selector(menuCallbackAbout:)];
@@ -78,7 +82,7 @@
 		MenuItemLabel *quitItem = [MenuItemLabel itemWithLabel:quitLabel target:self selector:@selector(menuCallbackQuit:)];
 		
 		// Create menu with items and align it
-		_menu = [Menu menuWithItems:playItem, helpItem, aboutItem, quitItem, nil];
+		_menu = [Menu menuWithItems:playItem, helpItem, optionItem, aboutItem, quitItem, nil];
 		[_menu alignItemsVertically];
 		[_menu setPosition:ccp(240, 120)];
 		[self addChild:_menu z:2];
@@ -94,6 +98,10 @@
 
 -(void)menuCallbackHelp:(id)sender {
 	[[Director sharedDirector] replaceScene:[ShrinkGrowTransition transitionWithDuration:1.0f scene:[HelpScene node]]];
+}
+
+-(void)menuCallbackOptions:(id)sender {
+	[[Director sharedDirector] replaceScene:[ShrinkGrowTransition transitionWithDuration:1.0f scene:[OptionsScene node]]];
 }
 
 -(void)menuCallbackAbout:(id)sender {

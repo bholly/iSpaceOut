@@ -34,7 +34,7 @@
 			<key>Key</key>
 			<string>musicVolume</string>
 			<key>DefaultValue</key>
-			<integer>50</integer>
+			<integer>80</integer>
 			<key>MinimumValue</key>
 			<integer>0</integer>
 			<key>MaximumValue</key>
@@ -52,7 +52,7 @@
 			<key>Key</key>
 			<string>soundFXVolume</string>
 			<key>DefaultValue</key>
-			<integer>50</integer>
+			<integer>70</integer>
 			<key>MinimumValue</key>
 			<integer>0</integer>
 			<key>MaximumValue</key>

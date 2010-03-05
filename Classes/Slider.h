@@ -17,18 +17,40 @@
  * along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 
-#import <Foundation/Foundation.h>
+//
+//  Slider.m
+//  Trundle
+//
+//  Created by Robert Blackwood on 11/13/09.
+//  Copyright 2009 Mobile Bros. All rights reserved.
+//
+
 #import "cocos2d.h"
 
-
-@interface MainMenuScene : Scene {
-	Menu *_menu;
+@interface SliderThumb : MenuItemImage
+{
+	
 }
+@property (readwrite, assign) float value;
 
--(void)menuCallbackPlay:(id)sender;
--(void)menuCallbackHelp:(id)sender;
--(void)menuCallbackOptions:(id)sender;
--(void)menuCallbackAbout:(id)sender;
--(void)menuCallbackQuit:(id)sender;
+-(id) initWithTarget:(id)t selector:(SEL)sel;
 
 @end
+
+/* Internal class only */
+@class SliderTouchLogic;
+
+@interface Slider : Layer 
+{
+	SliderTouchLogic* _touchLogic;
+}
+
+@property (readonly) SliderThumb* thumb;
+@property (readwrite, assign) float value;
+@property (readwrite, assign) BOOL liveDragging;
+
+-(id) initWithTarget:(id)t selector:(SEL)sel;
+
+@end
+
+

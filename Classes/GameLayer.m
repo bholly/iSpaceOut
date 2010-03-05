@@ -272,8 +272,11 @@ static int gimmickCollision(cpShape *a, cpShape *b, cpContact *contacts, int num
 		
 		// Preload first sound and background music
 		[[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"Chilled.mp3"];
-		[[SimpleAudioEngine sharedEngine] setBackgroundMusicVolume:0.7f];
+		int musicVolume = [[NSUserDefaults standardUserDefaults] integerForKey:@"musicVolume"];
+		[[SimpleAudioEngine sharedEngine] setBackgroundMusicVolume:musicVolume / 100.0f];
 		[[SimpleAudioEngine sharedEngine] preloadEffect:@"photon.caf"];
+		int soundFxVolume = [[NSUserDefaults standardUserDefaults] integerForKey:@"soundFXVolume"];
+		[[SimpleAudioEngine sharedEngine] setEffectsVolume:soundFxVolume / 100.0f];
 		
 		// Label *label = [Label labelWithString:@"No touch by now..." fontName:@"Marker Felt" fontSize:20];
 		// label.position =  ccp( winSize.width /2 , winSize.height/8);
@@ -849,8 +852,11 @@ static int gimmickCollision(cpShape *a, cpShape *b, cpContact *contacts, int num
 		
 		// Preload first sound and background music
 		[[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"Chilled.mp3"];
-		[[SimpleAudioEngine sharedEngine] setBackgroundMusicVolume:0.7f];
+		int musicVolume = [[NSUserDefaults standardUserDefaults] integerForKey:@"musicVolume"];
+		[[SimpleAudioEngine sharedEngine] setBackgroundMusicVolume:musicVolume / 100.0f];
 		[[SimpleAudioEngine sharedEngine] preloadEffect:@"photon.caf"];
+		int soundFxVolume = [[NSUserDefaults standardUserDefaults] integerForKey:@"soundFXVolume"];
+		[[SimpleAudioEngine sharedEngine] setEffectsVolume:soundFxVolume / 100.0f];
 		
 		// Label *label = [Label labelWithString:@"No touch by now..." fontName:@"Marker Felt" fontSize:20];
 		// label.position =  ccp( winSize.width /2 , winSize.height/8);
