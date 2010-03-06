@@ -12,10 +12,12 @@
 
 
 @interface OptionsScene : Scene {
+	bool buttonsLeft;
 	int musicVolume;
 	int soundFxVolume;
 }
 
+-(void)buttonsLeftButtonCallback:(id)sender;
 -(void)musicVolumeSliderCallback:(SliderThumb *)sender;
 -(void)soundFxVolumeSliderCallback:(SliderThumb *)sender;
 -(void)menuCallbackSaveOptions:(id)sender;
