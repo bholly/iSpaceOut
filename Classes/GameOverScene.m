@@ -102,17 +102,17 @@
 	[dialog setMessage:@"for high score server"]; 
 	[dialog addButtonWithTitle:@"Cancel"]; 
 	[dialog addButtonWithTitle:@"OK"]; 
-	nameField = [[UITextField alloc] initWithFrame:CGRectMake(20.0, 45.0, 
-															  245.0, 25.0)]; 
-	[nameField setBackgroundColor:[UIColor whiteColor]]; 
+	[dialog addTextFieldWithValue:@"" label:@""];
+	nameField = [dialog textField];
+	// nameField = [[UITextField alloc] initWithFrame:CGRectMake(20.0, 45.0, 245.0, 25.0)]; 
+	// [nameField setBackgroundColor:[UIColor whiteColor]]; 
 	//      [nameField setText: @"user name"]; 
-	[dialog addSubview:nameField];
-	CGAffineTransform moveUp = CGAffineTransformMakeTranslation(0.0, 
-																100.0); 
-	[dialog setTransform: moveUp]; 
+	// [dialog addSubview:nameField];
+	//CGAffineTransform moveUp = CGAffineTransformMakeTranslation(0.0, 100.0); 
+	//[dialog setTransform: moveUp]; 
 	[dialog show]; 
 	[nameField becomeFirstResponder];
-	[nameField release];
+	// [nameField release];
 	[dialog release]; 
 }
 
