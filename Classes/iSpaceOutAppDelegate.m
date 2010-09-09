@@ -53,7 +53,10 @@
 	// create an openGL view inside a window
 	[[Director sharedDirector] attachInView:window];	
 	[window makeKeyAndVisible];		
-		
+	
+	// Setup defaults
+	NSDictionary *values = [NSDictionary dictionaryWithObjectsAndKeys:@"80", @"musicVolume", @"70", @"soundFXVolume", nil];
+	[[NSUserDefaults standardUserDefaults] registerDefaults:values];
 		
 	[[Director sharedDirector] runWithScene: [MainMenuScene node]];
 }
