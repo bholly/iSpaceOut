@@ -96,24 +96,40 @@
 
 -(void)CreateInputBox
 {
+	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Enter name" message:@"for high score server\n\n\n" delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:@"Okay", nil];
+	nameField = [[UITextField alloc] initWithFrame:CGRectMake(10.0, 60.0, 262.0, 31.0)];
+	// [nameField setDelegate:self];
+	[nameField setPlaceholder:@"Your name"];
+	[nameField setBorderStyle:UITextBorderStyleBezel];
+	[nameField setOpaque:NO];
+	[nameField setFont:[UIFont fontWithName:@"Helvetica" size:19.0]];
+	[nameField setTextColor:[UIColor whiteColor]];
+	[nameField setBackgroundColor:[UIColor colorWithWhite:1.0 alpha:0.0]];
+	[nameField setTextAlignment:UITextAlignmentLeft];
+	[nameField setKeyboardAppearance:UIKeyboardAppearanceAlert];
+	[nameField becomeFirstResponder];
+	[alert addSubview:nameField];
+	[alert show];
+	[alert release];
+	/*
 	UIAlertView* dialog = [[UIAlertView alloc] init]; 
 	[dialog setDelegate:self]; 
 	[dialog setTitle:@"Enter Name"]; 
-	[dialog setMessage:@"for high score server"]; 
+	[dialog setMessage:@"for high score server\n"]; 
 	[dialog addButtonWithTitle:@"Cancel"]; 
-	[dialog addButtonWithTitle:@"OK"]; 
-	[dialog addTextFieldWithValue:@"" label:@""];
-	nameField = [dialog textField];
-	// nameField = [[UITextField alloc] initWithFrame:CGRectMake(20.0, 45.0, 245.0, 25.0)]; 
-	// [nameField setBackgroundColor:[UIColor whiteColor]]; 
-	//      [nameField setText: @"user name"]; 
-	// [dialog addSubview:nameField];
-	//CGAffineTransform moveUp = CGAffineTransformMakeTranslation(0.0, 100.0); 
-	//[dialog setTransform: moveUp]; 
+	[dialog addButtonWithTitle:@"OK"];
+	dialog.frame = CGRectMake( 0, 0, 300, 260);
+	nameField = [[UITextField alloc] initWithFrame:CGRectMake(20.0, 45.0, 245.0, 25.0)]; 
+	[nameField setBackgroundColor:[UIColor whiteColor]]; 
+	[nameField setText: @"user name"]; 
+	[dialog addSubview:nameField];
+	// CGAffineTransform moveUp = CGAffineTransformMakeTranslation(0.0, 100.0); 
+	// [dialog setTransform: moveUp]; 
 	[dialog show]; 
 	[nameField becomeFirstResponder];
-	// [nameField release];
+	[nameField release];
 	[dialog release]; 
+	 */
 }
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
