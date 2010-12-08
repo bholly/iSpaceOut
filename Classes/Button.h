@@ -20,7 +20,7 @@
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
 
-#define TOUCH_INACCURACY 0
+#define TOUCH_INACCURACY 20
 #define LIFT_OFF_INACCURACY 20
 
 @interface Button : Sprite {
